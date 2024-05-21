@@ -1,8 +1,9 @@
+/* Existing Styles */
 .container{
     width: 640px;
     margin: auto;
     margin-top: 150px;
-    background: white ;
+    background: white;
     color: #262626;
     display: flex;
     flex-direction: column;
@@ -14,7 +15,6 @@
 body{
     height: 100vh;
     background-image: linear-gradient(#D8C7FF, #2b843a);
-
 }
 
 .container hr{
@@ -45,7 +45,7 @@ body{
     width: 250px;
     height: 65px;
     background-color: #5cbd6c;
-    color: fff;
+    color: #fff;
     font-size: 25px;
     font-weight: 500;
     border-radius: 8px;
@@ -60,10 +60,65 @@ body{
 .container .correct{
     background: #dffff2;
     border-color: #00d397;
-
 }
 
 .container .wrong{
     background: #ffebeb;
     border-color: #ff4a4a;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin-top: 100px;
+        padding: 30px 20px;
+    }
+
+    .container h2 {
+        font-size: 24px;
+    }
+
+    .container ul li {
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .container button {
+        width: 200px;
+        height: 55px;
+        font-size: 22px;
+    }
+
+    .container .index {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        margin-top: 50px;
+        padding: 20px 10px;
+    }
+
+    .container h2 {
+        font-size: 20px;
+    }
+
+    .container ul li {
+        height: 50px;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .container button {
+        width: 150px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .container .index {
+        font-size: 14px;
+    }
 }
